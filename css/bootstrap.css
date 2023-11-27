@@ -5,16 +5,11 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-
-@font-face {
-  font-family: 'Boston Angel';
-  src: url('Boston Angel Regular.ttf') format('truetype');    font-weight: normal;
-  font-style: normal;
-}
+ 
 
 html {
   /* font-family: sans-serif; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -116,7 +111,7 @@ kbd,
 pre,
 samp {
   /* font-family: monospace, monospace; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   font-size: 1em;
 }
@@ -283,7 +278,7 @@ th {
   top: 1px;
   display: inline-block;
   /* font-family: 'Glyphicons Halflings'; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   font-style: normal;
   font-weight: normal;
@@ -1097,7 +1092,7 @@ html {
 }
 body {
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   font-size: 14px;
   line-height: 1.42857143;
@@ -6015,7 +6010,7 @@ button.close {
   z-index: 1070;
   display: block;
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   font-size: 12px;
   font-style: normal;
@@ -6136,7 +6131,7 @@ button.close {
   max-width: 276px;
   padding: 1px;
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   font-size: 14px;
   font-style: normal;
@@ -6407,7 +6402,7 @@ button.close {
   width: 20px;
   height: 20px;
   /* font-family: serif; */
-  font-family: 'Boston Angel';
+  font-family: '';
 
   line-height: 1;
 }
