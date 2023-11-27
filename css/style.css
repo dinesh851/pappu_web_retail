@@ -185,6 +185,10 @@ hr {
 	border-radius: 0;
 	margin: 9px 20px 0 20px;
 }
+#header{
+	border-top: 130px solid rgb(64, 63, 63);
+ }
+
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #ce2a36;
 }
@@ -218,16 +222,16 @@ hr {
 	background-color: #1b6d3f;
 }
 .section-title {
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 	margin-left: 0%;
 
 }
 .section-title h2 {
 	position: relative;
 	margin-top: 0;	
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
 
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 }
  
@@ -295,7 +299,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background: rgba(0,0,0,.45);
 }
 header .intro-text {
-	padding-top: 350px;
+	padding-top: 250px;
 	padding-bottom: 150px;
 	text-align: center;
 }
@@ -508,10 +512,10 @@ header .intro-text {
 }
 #contact h2 {
 	color:rgb(255, 255, 255);
-	margin-top: 10px;
+	/* margin-top: 10px;
 	margin-bottom: 15px;
 	margin-left: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 15px; */
 	text-align: left; 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
@@ -604,7 +608,8 @@ color: #777;
 /* Footer Section*/
 #footer {
 	background:rgb(9, 66, 91);
-	padding: 30px 0;
+	padding: 10px 0;
+	padding-top: 0px;	
 }
 #footer p {
 	color: #888;
