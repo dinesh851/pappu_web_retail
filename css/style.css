@@ -381,7 +381,7 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 100px 0;
-	/* background-image: url('To_Rahul/123.jpg'); */
+	 
 	color: white;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -390,7 +390,9 @@ header .intro-text {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	
 }
 #services .service-media {
@@ -417,6 +419,16 @@ header .intro-text {
 	padding: 100px 0;
 	padding-bottom: 100px;
 	background: #f6f6f6;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .portfolio-item {
 	margin: 15px 0;
