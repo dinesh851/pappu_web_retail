@@ -105,3 +105,44 @@ function main() {
 
 }
 main();
+
+
+
+
+
+
+
+
+
+
+function changeText() {
+  var button = document.getElementById('submitBtn');
+  button.innerHTML = 'Sending';
+  button.disabled = true; // Optionally disable the button after clicking
+  console.log("click");
+  // Change back to 'Submit' after 2 seconds
+  setTimeout(function() {
+    button.innerHTML = 'Sent';
+   }, 1000);
+   setTimeout(function() {
+    button.innerHTML = 'Submit';
+    button.disabled = false; // Enable the button again
+   }, 4000);
+
+}
+function changeText1() {
+  var button = document.getElementById('submitBtn1');
+  button.innerHTML = 'Sending';
+  button.disabled = true; // Optionally disable the button after clicking
+  console.log("click1");
+
+  // Change back to 'Submit' after 2 seconds
+  setTimeout(function() {
+    button.innerHTML = 'Sent';
+   }, 1000);
+   setTimeout(function() {
+    button.innerHTML = 'Submit';
+    button.disabled = false; // Enable the button again
+   }, 4000);
+
+}
