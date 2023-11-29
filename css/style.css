@@ -707,14 +707,7 @@ label {
 	
   }
    
-.about-text{
-	/* background: url('To_Rahul/123.jpg') */
-	
-}
-
-.services {
-	/* background: url('To_Rahul/123.jpg') */
-}
+ 
 .gap {
 	border: 5px solid rgb(255, 255, 255);
   }
@@ -730,6 +723,17 @@ label {
  
 
 
+#error-message{
+	color: red;
+	margin-top:-1% ;
+	margin-left: -120%;
+}
+#error-message1{
+	color: red;
+	margin-left: -120%;
+	margin-top: 20%;
+
+ }
 
 
 
@@ -743,8 +747,9 @@ label {
 
 
 
-
-
+ #error-message2{
+	color: red;
+ }
  
 
  
@@ -752,6 +757,7 @@ label {
 #submitBtn {
 	padding: 10px 20px;
 	font-size: 16px;
+	position: relative;
 	cursor: pointer;
 	background-color: #1663ab; /* Green */
 	width: 100%;
@@ -785,19 +791,20 @@ label {
 
   #submitBtn1 {
 	padding: 10px 20px;
-	margin-top: 5%;
+ 	margin-top: 20%;
 	font-size: 16px;
 	cursor: pointer;
 	background-color: #1663ab; /* Green */
-	width: 70%;
+	width: 80%;
 	color: white;
 	border: none;
 	border-radius: 5px;
   }
+
   #submitBtn1:hover {
 	padding: 10px 20px;
 	font-size: 16px;
-	width: 70%;
+	width: 80%;
 	 
 
 	cursor: pointer;
@@ -809,10 +816,54 @@ label {
 
   #submitBtn1:disabled {
 	padding: 10px 20px;
-	width: 70%;
+	width: 80%;
  
 
 	font-size: 16px;
 	background-color: #15ba7e; /* Grey */
 	cursor: not-allowed;
   }
+
+  @media only screen and (max-width: 600px) {
+    #submitBtn1 {
+         /* Adjust the width as needed for mobile screens */
+ 		margin-top: 30%;
+		 font-size: 16px;
+		 cursor: pointer;
+		 background-color: #1663ab; /* Green */
+		 width: 80%;
+		 color: white;
+		 border: none;
+		 border-radius: 5px;
+	   }
+    }
+	#submitBtn1:hover {
+		padding: 10px 20px;
+		font-size: 16px;
+		width: 80%;
+		 
+	
+		cursor: pointer;
+		background-color: rgb(22, 124, 171); /* Green */
+		color: white;
+		border: none;
+		border-radius: 5px;
+	  }
+	  #submitBtn1:disabled {
+		padding: 10px 20px;
+		width: 80%;
+	 
+	
+		font-size: 16px;
+		background-color: #15ba7e; /* Grey */
+		cursor: not-allowed;
+	  }
+ 
+	#error-message1{
+		color: red;
+		margin-left: -120%;
+		margin-top: 25%;
+	
+	 }
+	
+ 

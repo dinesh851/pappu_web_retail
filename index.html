@@ -246,9 +246,9 @@ My experience with United Modern Group was exceptional. Their team demonstrated 
          <input type="number" id="Bathroom" name="Bathroom" min="1" max="3" required ><br><br> 
         <label for="Message">Message:</label><br>
         <!-- <input type="hidden" name="_next" value="http://localhost:5500/"> -->
-        <input type="Message" id="Message" name="Message"  ><br><br><br><br><br>
-
-        <button  class="submit" type="button" class="button1" id="submitBtn" onclick="changeText(); submitForm1();">
+        <input type="Message" id="Message" name="Message"  ><br><br> 
+        <h4 id="error-message"></h4>
+        <button  class="submit" type="button" class="button1" id="submitBtn" onclick="validateForm(event)";>
           Submit 
          
         </button>
@@ -284,12 +284,13 @@ My experience with United Modern Group was exceptional. Their team demonstrated 
        
         <label for="message">Message:</label><br>
  
-        <input type="message" id="Message" name="Message"  ><br><br><br>
+        <input type="message" id="Message" name="Message"  ><br>
         &nbsp
-        <button  class="submit" type="button" class="button1" id="submitBtn1" onclick="changeText1(); submitForm2();">
+        <button  class="submit" type="button" class="button1" id="submitBtn1" onclick="validateForm2(event);">
           Submit 
          
         </button>
+        <h4 id="error-message1"></h4>
        
       </div>
     
@@ -338,7 +339,8 @@ My experience with United Modern Group was exceptional. Their team demonstrated 
           <div id="success"></div>
           <input type="hidden" name="_template" value="table">
  
-          <input  type="button" value="Submit"class="btn btn-custom btn-lg" onclick="submitForm3()">
+          <input  type="button" value="Submit"class="btn btn-custom btn-lg" onclick="validateForm3(event)">
+          <h4 style="color: red;" id="error-message2"></h4>
 
         </form>
       </div>

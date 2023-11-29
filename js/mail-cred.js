@@ -1,5 +1,50 @@
- 
-
+function validateForm(event) {
+    const form = document.getElementById("myForm");
+    const errorMessage = document.getElementById("error-message");
+    if (!form.checkValidity()) {
+        // If the form is not valid, prevent submission
+        event.preventDefault();
+        // You can add your own validation logic or display an error message here
+        errorMessage.textContent = "Please fill in all the required fields.";
+    }
+    if (form.checkValidity()) {
+        changeText();
+        submitForm1();
+        form.reset();
+        errorMessage.textContent = "";
+    }
+}
+function validateForm2(event) {
+    const form = document.getElementById("myForm1");
+    const errorMessage = document.getElementById("error-message1");
+    if (!form.checkValidity()) {
+        // If the form is not valid, prevent submission
+        event.preventDefault();
+        // You can add your own validation logic or display an error message here
+        errorMessage.textContent = "Please fill in all the required fields.";
+    }
+    if (form.checkValidity()) {
+        changeText1();
+        submitForm2();
+        form.reset();
+        errorMessage.textContent = "";
+    }
+}
+function validateForm3(event) {
+    const form = document.getElementById("myForm2");
+    const errorMessage = document.getElementById("error-message2");
+    if (!form.checkValidity()) {
+        // If the form is not valid, prevent submission
+        event.preventDefault();
+        // You can add your own validation logic or display an error message here
+        errorMessage.textContent = "Please fill in all the required fields.";
+    }
+    if (form.checkValidity()) {
+        submitForm3();
+        form.reset();
+        errorMessage.textContent = "";
+    }
+}
 function submitForm1(event) {
     const form = document.getElementById('myForm');
     const formData = new FormData(form);
