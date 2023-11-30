@@ -1,12 +1,25 @@
+const url = 'http://localhost:8888/api/new';
+
 function validateForm(event) {
     const form = document.getElementById("myForm");
     const errorMessage = document.getElementById("error-message");
-    if (!form.checkValidity()) {
-        // If the form is not valid, prevent submission
-        event.preventDefault();
-        // You can add your own validation logic or display an error message here
-        errorMessage.textContent = "Please fill in all the required fields.";
+    let notFilledFields = [];
+
+    // Check each form element for validity
+    for (const element of form.elements) {
+        if (element.tagName !== "BUTTON" && !element.checkValidity()) {
+            notFilledFields.push(element.placeholder || element.name);
+        }
     }
+
+    if (notFilledFields.length > 0) {
+        // If there are unfilled fields, prevent submission
+        event.preventDefault();
+        // Display an error message with the unfilled fields
+        errorMessage.textContent = `Please fill in : ${notFilledFields.join(", ")}.`;
+    }
+ 
+
     if (form.checkValidity()) {
         changeText();
         submitForm1();
@@ -17,12 +30,22 @@ function validateForm(event) {
 function validateForm2(event) {
     const form = document.getElementById("myForm1");
     const errorMessage = document.getElementById("error-message1");
-    if (!form.checkValidity()) {
-        // If the form is not valid, prevent submission
-        event.preventDefault();
-        // You can add your own validation logic or display an error message here
-        errorMessage.textContent = "Please fill in all the required fields.";
+    let notFilledFields = [];
+
+    // Check each form element for validity
+    for (const element of form.elements) {
+        if (element.tagName !== "BUTTON" && !element.checkValidity()) {
+            notFilledFields.push(element.placeholder || element.name);
+        }
     }
+
+    if (notFilledFields.length > 0) {
+        // If there are unfilled fields, prevent submission
+        event.preventDefault();
+        // Display an error message with the unfilled fields
+        errorMessage.textContent = `Please fill in : ${notFilledFields.join(", ")}.`;
+    }
+ 
     if (form.checkValidity()) {
         changeText1();
         submitForm2();
@@ -33,13 +56,24 @@ function validateForm2(event) {
 function validateForm3(event) {
     const form = document.getElementById("myForm2");
     const errorMessage = document.getElementById("error-message2");
-    if (!form.checkValidity()) {
-        // If the form is not valid, prevent submission
-        event.preventDefault();
-        // You can add your own validation logic or display an error message here
-        errorMessage.textContent = "Please fill in all the required fields.";
+    let notFilledFields = [];
+
+    // Check each form element for validity
+    for (const element of form.elements) {
+        if (element.tagName !== "BUTTON" && !element.checkValidity()) {
+            notFilledFields.push(element.placeholder || element.name);
+        }
     }
+
+    if (notFilledFields.length > 0) {
+        // If there are unfilled fields, prevent submission
+        event.preventDefault();
+        // Display an error message with the unfilled fields
+        errorMessage.textContent = `Please fill in the following fields: ${notFilledFields.join(", ")}.`;
+    }
+ 
     if (form.checkValidity()) {
+        changeText2();
         submitForm3();
         form.reset();
         errorMessage.textContent = "";
@@ -48,7 +82,6 @@ function validateForm3(event) {
 function submitForm1(event) {
     const form = document.getElementById('myForm');
     const formData = new FormData(form);
-      url = 'https://apipapi.netlify.app/api/new'; // Replace with your actual API endpoint
 
     // Convert FormData to a plain object
     const formDataObject = {};
@@ -77,15 +110,18 @@ function submitForm1(event) {
 function submitForm2(event) {
   const form = document.getElementById('myForm1');
   const formData = new FormData(form);
-  const url = 'https://apipapi.netlify.app/api/new';
-
+    // Convert FormData to a plain object
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+        formDataObject[key] = value;
+      });
   fetch(url, {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
       },
-      body: JSON.stringify(Object.fromEntries(formData)),
-  })
+      body: JSON.stringify(formDataObject),
+    })
   .then(response => response.json())
   .then(data => {
       console.log('Success:', data);
@@ -99,15 +135,18 @@ function submitForm2(event) {
 function submitForm3() {
   const form = document.getElementById('myForm2');
   const formData = new FormData(form);
-  const url = 'https://apipapi.netlify.app/api/new';
-
+    // Convert FormData to a plain object
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+        formDataObject[key] = value;
+      });
   fetch(url, {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
       },
-      body: JSON.stringify(Object.fromEntries(formData)),
-  })
+      body: JSON.stringify(formDataObject),
+    })
   .then(response => response.json())
   .then(data => {
       console.log('Success:', data);

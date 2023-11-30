@@ -123,7 +123,7 @@ function changeText() {
   // Change back to 'Submit' after 2 seconds
   setTimeout(function() {
     button.innerHTML = 'Sent';
-   }, 1000);
+   }, 2000);
    setTimeout(function() {
     button.innerHTML = 'Submit';
     button.disabled = false; // Enable the button again
@@ -139,10 +139,37 @@ function changeText1() {
   // Change back to 'Submit' after 2 seconds
   setTimeout(function() {
     button.innerHTML = 'Sent';
-   }, 1000);
+   }, 2000);
    setTimeout(function() {
     button.innerHTML = 'Submit';
     button.disabled = false; // Enable the button again
    }, 4000);
 
 }
+function changeText2() {
+  var button = document.getElementById('buttton');
+  button.value  = 'Sending';
+  button.disabled = true; // Optionally disable the button after clicking
+  console.log("click1");
+
+  // Change back to 'Submit' after 2 seconds
+  setTimeout(function() {
+    button.value  = 'Sent';
+   }, 2000);
+   setTimeout(function() {
+    button.value  = 'Submit';
+    button.disabled = false; // Enable the button again
+   }, 4000);
+
+}
+
+
+
+
+
+
+
+
+
+
+ 
