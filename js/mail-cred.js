@@ -1,4 +1,4 @@
-const url = 'https://https://apipapi.netlify.app/api/new';
+const url = 'https://apipapi.netlify.app/api/new';
 
 function validateForm(event) {
     const form = document.getElementById("myForm");
